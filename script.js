@@ -34,7 +34,7 @@ function inicio()
 				
 			if(texto.charAt(i)==alfabeto[j]){
 				c=(j-clave)%n;
-				if(c<0){
+				if(c<0){
 					c=c+86;
 					
 				}
@@ -46,6 +46,7 @@ function inicio()
 					text_cifrado += texto.charAt(i);
 				}
 				ban=0;
+				c=0;
 		}
 		nom_div("tabla").innerHTML = text_cifrado;
 		}
