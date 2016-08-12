@@ -35,7 +35,8 @@ function inicio()
 			if(texto.charAt(i)==alfabeto[j]){
 				c=(j-clave)%n;
 				if(c<0){
-					c=c*-1;
+					c=c+86;
+					
 				}
 				text_cifrado += alfabeto[c];
 				ban=1;
